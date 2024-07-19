@@ -25,6 +25,10 @@ document.querySelector('.hamburger').addEventListener("click", ()=>{
 //         button.textContent = "Read More";
 //     }
 // }
+function toggleSidebar() {
+    var sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('sidebarGo');
+}
 
 
 

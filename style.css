@@ -257,8 +257,7 @@
     }
 
     .sidebarGo {
-        transform: translateX(0); /* Ensure sidebar is visible */
-    }
+        transform: translateX(0); }
 
     .main {
         margin-left: 0; /* No margin on smaller screens */
