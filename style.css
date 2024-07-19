@@ -273,9 +273,18 @@
 #merainfo li ,p{
     color: #a49f9f;
 }
-.main h1{
+#naam{
     color: rgb(211 241 255);
+    margin-top: 60px;
 }
+
+#ifm{
+    color: white;
+    margin: auto;
+    width: 350px;
+    padding-bottom: 20px;
+}
+
 .main h2{
     color: white;
 }
@@ -291,7 +300,7 @@
 
 #project h1{
     margin: auto;
-    width: 300px;
+    width: 350px;
     padding-bottom: 20px;
     z-index: 2;
 }
