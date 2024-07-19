@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    position: fixed;
+    background-color: #b5b5b5;
+    width: 15vw;
+    height: 100vh; /* Adjust height to cover full viewport height */
+    border-right: 3px solid black;
+    transition: transform 0.3s ease-in;
+    transform: translateX(-100%); /* Start off-screen */
+    z-index: 2;
+}
+
+.sidebarGo {
+    transform: translateX(0); /* Ensure sidebar is visible */
+}
+
+.main {
+    margin-left: 17vw; /* Ensure main content area is offset by sidebar width */
+    width: 85vw;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start; /* Ensure content starts from the left */
+    align-items: flex-start; /* Align items to the top */
+    background-image: url(portbackgorund.webp);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ensure container covers full viewport height */
+}
+
+
+.hamburger {
+    position: fixed;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    z-index: 2; /* Ensure hamburger is above other content */
+}
+
+/* .hamburger .line {
+    width: 40px;
+    height: 3px;
+    background-color: rgb(223, 215, 215);
+    margin: 6px 0;
+    transition: transform 0.3s ease-in;
+} */
+
+/* .cross .line-1 {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.cross .line-2 {
+    transform: rotate(-45deg) translate(5px, -5px);
+} */
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+    color: black;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar nav li:hover {
+    text-decoration: underline;
+    color: #161616;
+}
+
+/* Main content area */
+
+
+.container .bkg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container .bkg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.infocontainer {
+    height: 78vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -120px;
+}
+
+.hello {
+    font-size: 65px;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 6px -8px 14px #60bfec;
+}
+
+.about {
+    font-size: 35px;
+    color: #a49f9f;
+}
+
+.moreabout {
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.buttons {
+    margin-top: 8px;
+}
+
+.buttons button {
+    padding: 3px 6px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 47px 14px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    color: blue;
+    background-color: white;
+}
+
+.pfpic {
+    margin-top: 30px;
+    margin-right:130px ;
+    position: relative; /* Ensure relative positioning */
+    width: 25%; /* Adjust width as needed */
+}
+
+.pfpic img {
+    max-width: 180%; /* Ensure image stays within its parent */
+    height: 250px; /* Maintain aspect ratio */
+
+}
+
+.contactform {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 34px;
+    padding-top: 144px;
+}
+
+.contactform h1 {
+    text-align: center;
+    color: white;
+}
+
+.contactform div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+   
+}
+.cfm {
+    margin: 0 auto; /* Center the form horizontally */
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 20px; /* Add padding to create space inside the form */
+    background-color: rgba(255, 255, 255, 0.3); /* Example background color with transparency */
+    border-radius: 10px; /* Rounded corners for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adding shadow for depth */
+}
+
+.cfm h1 {
+    text-align: center;
+    color: white;
+}
+
+.cfm div {
+    margin-bottom: 10px; /* Adjust spacing between form elements */
+}
+
+.cfm input[type="text"],
+.cfm input[type="email"],
+.cfm input[type="phone"] {
+    width: 100%; /* Make input fields full width */
+    padding: 10px; /* Add padding inside input fields */
+    border: 1px solid #ccc; /* Example border */
+    border-radius: 5px; /* Rounded corners for input fields */
+}
+
+.cfm button {
+    display: block; /* Ensure button is block level for centering */
+    margin: 0 auto; /* Center the button horizontally */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cfm button:hover {
+    background-color: #4CAF50; /* Change color on hover */
+    color: white;
+}
+
+.btn-sm {
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+}
+
+/* .contactform form div input {
+    width: 19vw;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 6px 0 0 0;
+} */
+
+#emailHelp {
+    font-size: 10px;
+    color: rgb(5, 5, 5);
+    margin: 0px 5px;
+}
+
+@media (max-width: 900px) {
+    .sidebar {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Auto height to fit content */
+        transform: translateX(-100%); /* Start off-screen on small screens */
+    }
+
+    .sidebarGo {
+        transform: translateX(0); /* Ensure sidebar is visible */
+    }
+
+    .main {
+        margin-left: 0; /* No margin on smaller screens */
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+.main #merainfo{
+    margin-left: 10px;
+}
+
+#merainfo li ,p{
+    color: #a49f9f;
+}
+.main h1{
+    color: rgb(211 241 255);
+}
+.main h2{
+    color: white;
+}
+.myinformation p,h3{
+    color: #fff8ee;
+}
+.mb-3{
+    color: white;
+}
+/* #additionalContent{
+    display: none;
+} */
+
+#project h1{
+    margin: auto;
+    width: 300px;
+    padding-bottom: 20px;
+    z-index: 2;
+}
+.baground img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.baground{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.3;
+}
+#project h2{
+    text-decoration: underline;
+    color: #f3ff7c;
+}
+#project{
+    opacity: 200%;
+}
+#project ul{
+    color: white;
+}
+
+.myinfoback img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.myinfoback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.2;
+}

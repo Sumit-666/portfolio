@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar"> 
+            <nav>
+                <li><a href="/"> Home</a></li>
+                <li><a href="info.html">My info</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <!-- <li><a href="blog.html">Blog</a></li> -->
+                <li><a href="contact.html">Contact me</a></li>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="contactform">
+                <h1>Contact me for further enquiries</h1>
+                <form class="cfm">
+                    <div class="mb-3">
+                        <label for="clientname" class="form-label" >Name</label>
+                        <input type="text" class="form-name" id="clientname" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="clientemail" class="form-label">Email address</label>
+                        <input type="email" class="form-control"  id="clientemail" aria-describedby="emailHelp"  placeholder="Enter your email">
+                        <div id="emailHelp" class="form-text">We'll never share your email or phone with anyone else.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="clientphone" class="form-label">Phone</label>
+                        <input type="phone" class="form-control" id="clientphone" placeholder="Enter your number">
+                    </div>
+                    <!-- <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="isclient">
+                        <label class="form-check-label" for="isclient">work with me</label>
+                    </div> -->
+                    <button type="submit" class="btn btn-sm">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="hamburger">
+            <img class="ham" src="hambg-removebg-preview.png" alt="" width="60" height="45">
+            <img class="cross" src="images__1_-removebg-preview.png" alt="" width="35">
+         </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
